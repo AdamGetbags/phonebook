@@ -49,7 +49,7 @@ app.use(morgan(function (tokens, req, res) {
 app.use(cors())
 
 const generateId = () => {
-  return Math.floor(Math.random() * 99999999)
+  return String(Math.floor(Math.random() * 99999999))
 }
 
 app.get('/', (request, response) => {
